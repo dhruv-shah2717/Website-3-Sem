@@ -1,0 +1,542 @@
+<!-- Shree Ganashi Nam -->
+<!-- Mahek -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" 
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" 
+    rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../Css/Default.css">
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <link rel="stylesheet" href="../Css/Footer.css">
+    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../Css/Shop.css">
+    <link rel="stylesheet" href="../Css/Contact.css">
+    <link rel="stylesheet" href="../Css/Cart.css">
+    <link rel="stylesheet" href="../Css/LR.css">
+    <link rel="stylesheet" href="../Css/Profile.css">
+    <link rel="stylesheet" href="../Css/Order.css">
+    <link rel="stylesheet" href="../Css/Product.css">
+    <link rel="stylesheet" href="../Css/Checkout.css">
+
+    <!-- Cart qty Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Title Logo -->
+    <link rel="icon" href="../Images/Logo/Logoc.png" type="image/png">
+    
+    <title>Online Shopping site in india</title>
+</head>
+<body>
+
+    <!-- Bootstrap Popper and Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <!-- Start of Navbar Section -->
+
+        <section class="navbar-section fixed-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="../Admin/Ahome.html">
+                            <img src="../Images/Logo/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Responsive Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="bi bi-list-stars" style="color: white; font-size: 28px;"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mx-auto gap-0 gap-md-3">
+                            <li class="nav-item">
+                                <a class="nav-link 
+                                ms-2 ms-md-0" href="../User/Home.html"><i class="bi bi-house-fill"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Shop.html"><i class="bi bi-bag-check-fill"></i> Shop</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Contact.html"><i class="bi bi-headset"></i> Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Cart.html"><i class="bi bi-cart-dash-fill"></i> Cart</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Order.html"><i class="bi bi-box-seam-fill"></i> Orders</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icon gap-0 gap-md-2">
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Profile.html"><i class="bi bi-person-fill"></i> <span class="user-name"> Dhruv</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link s'
+                                ms-2 ms-md-0" href="../User/Login.html"><i class="bi bi-person-fill"></i> <small>Login/Regsiter</small></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link ms-2 ms-md-0" onclick="openSearch()"><i class="bi bi-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Overlay -->
+            <div id="searchOverlay" class="nav-search-overlay">
+                <span class="close-btn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="nav-search-form">
+                    <form action="../User/shop.html">
+                        <input type="text" placeholder="Search for Products, Brands and More" name="search">
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                function openSearch() {
+                    document.getElementById("searchOverlay").style.display = "block";
+                }
+
+                function closeSearch() {
+                    document.getElementById("searchOverlay").style.display = "none";
+                }
+            </script>
+        </section>
+
+        <div class="Space-section" style="padding-top: 81px"></div>
+        
+    <!-- End of Navbar Section -->
+
+    <!-- Start of Product Section -->
+
+        <section class="product-section Dhruv">
+            <div class="container Size">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-images">
+                            <div class="image-display">
+                                <div class="image-showcase">
+                                    <img src="../Images/Products/Product 1/p1.jpg" alt="product image">
+                                    <img src="../Images/Products/Product 1/p2.jpg" alt="product image">
+                                    <img src="../Images/Products/Product 1/p3.jpg" alt="product image">
+                                    <img src="../Images/Products/Product 1/p4.jpg" alt="product image">
+                                </div>
+                            </div>
+                            <div class="image-select">
+                                <div class="image-item">
+                                    <a href="#" data-id="1">
+                                        <img src="../Images/Products/Product 1/p1.jpg" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="image-item">
+                                    <a href="#" data-id="2">
+                                        <img src="../Images/Products/Product 1/p2.jpg" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="image-item">
+                                    <a href="#" data-id="3">
+                                        <img src="../Images/Products/Product 1/p3.jpg" alt="product image">
+                                    </a>
+                                </div>
+                                <div class="image-item">
+                                    <a href="#" data-id="4">
+                                        <img src="../Images/Products/Product 1/p4.jpg" alt="product image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            const imgs = document.querySelectorAll('.image-select a');
+                            const imgBtns = [...imgs];
+                            let imgId = 1;
+
+                            imgBtns.forEach((imgItem) => {
+                                imgItem.addEventListener('click', (event) => {
+                                    event.preventDefault();
+                                    imgId = imgItem.dataset.id;
+                                    slideImage();
+                                });
+                            });
+
+                            function slideImage() {
+                                const displayWidth = document.querySelector('.image-showcase img:first-child').clientWidth;
+                                document.querySelector('.image-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+                            }
+
+                            window.addEventListener('resize', slideImage);
+                        </script>
+
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="product-details">
+                            <h4>Lenovo IdeaPad Gaming 3.
+                                <span>Brand: Lenovo</span>
+                            </h4>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(150 Reviews)</span>
+                            </div>
+                            <div class="price">
+                                ₹ 6499
+                                <span>₹ 91290</span>
+                            </div>
+                            <p>
+                                Lenovo IdeaPad Gaming 3 AMD Ryzen 5 6600H 15.6" 39.62cm FHD IPS 120Hz Gaming Laptop 16GB/512GB SSD/Win11/Office/NVIDIA RTX 3050 4GB/RGB Keyboard/Alexa/3Month.
+                            </p>
+                            <div class="buttons">
+                                <a href="../User/Cart.html">
+                                    <button type="submit" class="btn btn-buy-now Dbutton"> <i class="bi bi-bag-check"></i> Buy Now</button>
+                                </a>
+                                <a href="../User/Cart.html">
+                                    <button type="submit" class="btn btn-add-to-cart Dbutton"> <i class="bi bi-cart3"></i> Add to Cart</button>
+                                </a>
+                                </div>
+                            <div class="widget">
+                                <ul>
+                                    <li>
+                                        <span>Category:</span>
+                                        <label>Electronics</label>
+                                        <span>Availability:</span>
+                                        <label>In Stock</label>
+                                        <span>Available Color:</span>
+                                        <label>Black</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Product Section -->
+
+    <!-- Start of Description and Review Section -->
+
+        <section class="description-review-section Dhruv">
+            <div class="container Size">
+                <div class="row">
+                    <div class="col">
+                        <div class="description">
+                            <h5>Description</h5>
+                            <p>
+                                Processor: Intel i5 12800H | Speed: 3.3 GHz (Base) - 4.5 GHz (Max) | 6 Cores | 12 Threads | 16MB Cache. , OS and Pre-Installed Software: Pre-Loaded Windows 11 Home with Lifetime Validity | MS Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription. , Keyboard: Full-size 4-Zone white Backlit legendary TrueStrike Keyboard with 100pct. Anti-Ghosting, Anti-Abrasion & Soft-Landing switches| 1.5 mm Key Travel| Large Arrow Keys| 1 piece TrackPad. , Display: 16" FHD (1920x1080) | IPS Technology | 120 Hz Refresh Rate | 250Nits Brightness | Anti-glare || Memory: 16GB RAM DDR4-3200 || Storage: 512GB SSD.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-section">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Reviews</h5>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                        <div class="col">
+                            <div class="card review-card">
+                                <div class="row">
+                                    <div class="col-3 p-0">
+                                        <img src="../Images/Reviews/IMG_1348.jpg" alt="" class="review-img">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <div class="card-body review-body">
+                                            <p>Dhruv Shah</p>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col p-0">
+                                        <div class="comment">
+                                            <p>Nice Product You buy this Product definitly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card review-card">
+                                <div class="row">
+                                    <div class="col-3 p-0">
+                                        <img src="../Images/Reviews/IMG_1348.jpg" alt="" class="review-img">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <div class="card-body review-body">
+                                            <p>Mehul Shah</p>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col p-0">
+                                        <div class="comment">
+                                            <p>Nice Product You buy this Product definitly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card review-card">
+                                <div class="row">
+                                    <div class="col-3 p-0">
+                                        <img src="../Images/Reviews/IMG_1348.jpg" alt="" class="review-img">
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <div class="card-body review-body">
+                                            <p>Raj Shah</p>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col p-0">
+                                        <div class="comment">
+                                            <p>Nice Product You buy this Product definitly.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Description and Review Section -->
+
+    <!-- Start of Product Card Section -->
+
+        <section class="product-section Dhruv">
+            <div class="container Size">
+                <!-- <div class="row g-4">
+                    <div class="col">
+                        <div class="product-heading">
+                            <h4>New Product</h4>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="row">
+                    <div class="col">
+                        <div class="related-heading">
+                            <h4>Related Products</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 2/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">boAt Wave Elevate Smart Watch.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1499</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 3/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">boAt Airdopes 141.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 999</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 4/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Portronics Toad One Bluetooth Mouse.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 649</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 5/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Ant Esports KM500 Pro Backlit Gaming Membrane Keyboard.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1099</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Product Card Section -->
+
+    <!-- Start of Footer Section -->
+
+        <section class="footer-section">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <img src="../Images/Logo/Logo.png" alt="Logo">
+                                    <p>Your one-stop online shopping experience. Discover a wide range of high-quality products, from the latest fashion and electronics to home essentials and more.</p>
+                                    <h2>We Accept</h2>
+                                    <div class="payment-icons">
+                                        <i class="fa fa-cc-visa"></i>
+                                        <i class="fa fa-credit-card"></i>
+                                        <i class="fa fa-cc-mastercard"></i>
+                                        <i class="fa fa-cc-paypal"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Make Money With Us</h2>
+                                    <ul>
+                                        <li><a href="#">Sell On Madhav</a></li>
+                                        <li><a href="#">Protect and Build Your Brand</a></li>
+                                        <li><a href="#">Become an Affiliate</a></li>
+                                        <li><a href="#">Fulfilment by Madhav</a></li>
+                                        <li><a href="#">Advertise Your Products</a></li>
+                                        <li><a href="#">Madhav Pay on Merchants</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Let Us Help You</h2>
+                                    <ul>
+                                        <li><a href="#">COVID-19 and Madhav</a></li>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Return Center</a></li>
+                                        <li><a href="#">Recalls and Product Safety Alerts</a></li>
+                                        <li><a href="#">100% Purchase Protection</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>About Us</h2>
+                                    <p>Madhav delivers the largest selection of products to Prime members in India, same day or faster.</p>
+                                    <h2>Follow us on</h2>
+                                    <p class="social-icons">
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                        <i class="bi bi-twitter"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col">
+                                <div class="footer-copyright">
+                                    Conditions of Use & Sale Privacy Notice Interest-Based Ads. <br>
+                                    © 2000-2024, Madhav.com, Inc. or its affiliates. <br>
+                                    Created by Dhruv M Shah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    <!-- End of Footer Section -->
+
+</body>
+</html>

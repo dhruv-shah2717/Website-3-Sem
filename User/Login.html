@@ -1,0 +1,293 @@
+<!-- Shree Ganashi Nam -->
+<!-- Mahek -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" 
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" 
+    rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../Css/Default.css">
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <link rel="stylesheet" href="../Css/Footer.css">
+    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../Css/Shop.css">
+    <link rel="stylesheet" href="../Css/Contact.css">
+    <link rel="stylesheet" href="../Css/Cart.css">
+    <link rel="stylesheet" href="../Css/LR.css">
+    <link rel="stylesheet" href="../Css/Profile.css">
+    <link rel="stylesheet" href="../Css/Order.css">
+    <link rel="stylesheet" href="../Css/Product.css">
+    <link rel="stylesheet" href="../Css/Checkout.css">
+
+    <!-- Cart qty Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Title Logo -->
+    <link rel="icon" href="../Images/Logo/Logoc.png" type="image/png">
+    
+    <title>Online Shopping site in india</title>
+</head>
+<body>
+
+    <!-- Bootstrap Popper and Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <!-- Start of Navbar Section -->
+
+        <section class="navbar-section fixed-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="../Admin/Ahome.html">
+                            <img src="../Images/Logo/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Responsive Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="bi bi-list-stars" style="color: white; font-size: 28px;"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mx-auto gap-0 gap-md-3">
+                            <li class="nav-item">
+                                <a class="nav-link 
+                                ms-2 ms-md-0" href="../User/Home.html"><i class="bi bi-house-fill"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Shop.html"><i class="bi bi-bag-check-fill"></i> Shop</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Contact.html"><i class="bi bi-headset"></i> Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Cart.html"><i class="bi bi-cart-dash-fill"></i> Cart</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Order.html"><i class="bi bi-box-seam-fill"></i> Orders</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icon gap-0 gap-md-2">
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Profile.html"><i class="bi bi-person-fill"></i> <span class="user-name"> Dhruv</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link s' active
+                                ms-2 ms-md-0" href="../User/Login.html"><i class="bi bi-person-fill"></i> <small>Login/Regsiter</small></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link ms-2 ms-md-0" onclick="openSearch()"><i class="bi bi-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Overlay -->
+            <div id="searchOverlay" class="nav-search-overlay">
+                <span class="close-btn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="nav-search-form">
+                    <form action="../User/shop.html">
+                        <input type="text" placeholder="Search for Products, Brands and More" name="search">
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                function openSearch() {
+                    document.getElementById("searchOverlay").style.display = "block";
+                }
+
+                function closeSearch() {
+                    document.getElementById("searchOverlay").style.display = "none";
+                }
+            </script>
+        </section>
+
+        <div class="Space-section" style="padding-top: 81px"></div>
+        
+    <!-- End of Navbar Section -->
+
+    <!-- Start of Login Form Section -->
+
+        <section class="LR-section Dhruv">
+            <div class="container Size">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6 image-container">
+                                <div class="image">
+                                    <img src="../Images/Backgrounds/LR.png" class="img-fluid">
+                                </div>
+                            </div> 
+
+                            <div class="col-md-6 form-container">
+                                <div class="row align-items-center">
+                                    <div class="heading mb-4">
+                                        <h4>Sign In</h4>
+                                    </div>
+
+                                    <form action="" method="post" class="user-form" onsubmit="return loginvalidate()">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Enter your Email" name="email" value="" class="form-input Dinput" id="email">
+                                            <div class="error">
+                                                <span id="e_email"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" placeholder="Enter your Password" name="password" value="" class="form-input Dinput" id="password">
+                                            <div class="error">
+                                                <span id="e_password"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-5 d-flex justify-content-end">
+                                            <div class="forgot-password">
+                                                <small><a href="">Forgot password</a></small>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button class="btn submit-button Dbutton" type="submit" name="btn">Login</button>
+                                        </div>
+                                    </form>
+
+                                    <div class="row sign">
+                                        <small>Don't have an account? <a href="../User/Register.html">Sign Up</a></small>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Login Form Section -->
+
+    <!-- Start of Footer Section -->
+
+        <section class="footer-section">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <img src="../Images/Logo/Logo.png" alt="Logo">
+                                    <p>Your one-stop online shopping experience. Discover a wide range of high-quality products, from the latest fashion and electronics to home essentials and more.</p>
+                                    <h2>We Accept</h2>
+                                    <div class="payment-icons">
+                                        <i class="fa fa-cc-visa"></i>
+                                        <i class="fa fa-credit-card"></i>
+                                        <i class="fa fa-cc-mastercard"></i>
+                                        <i class="fa fa-cc-paypal"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Make Money With Us</h2>
+                                    <ul>
+                                        <li><a href="#">Sell On Madhav</a></li>
+                                        <li><a href="#">Protect and Build Your Brand</a></li>
+                                        <li><a href="#">Become an Affiliate</a></li>
+                                        <li><a href="#">Fulfilment by Madhav</a></li>
+                                        <li><a href="#">Advertise Your Products</a></li>
+                                        <li><a href="#">Madhav Pay on Merchants</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Let Us Help You</h2>
+                                    <ul>
+                                        <li><a href="#">COVID-19 and Madhav</a></li>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Return Center</a></li>
+                                        <li><a href="#">Recalls and Product Safety Alerts</a></li>
+                                        <li><a href="#">100% Purchase Protection</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>About Us</h2>
+                                    <p>Madhav delivers the largest selection of products to Prime members in India, same day or faster.</p>
+                                    <h2>Follow us on</h2>
+                                    <p class="social-icons">
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                        <i class="bi bi-twitter"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col">
+                                <div class="footer-copyright">
+                                    Conditions of Use & Sale Privacy Notice Interest-Based Ads. <br>
+                                    © 2000-2024, Madhav.com, Inc. or its affiliates. <br>
+                                    Created by Dhruv M Shah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    <!-- End of Footer Section -->
+
+    <!-- Valadation link -->
+    <script src="../Js/Main.js"></script>
+    
+</body>
+</html>

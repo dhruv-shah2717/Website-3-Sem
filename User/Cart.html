@@ -1,0 +1,404 @@
+<!-- Shree Ganashi Nam -->
+<!-- Mahek -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" 
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" 
+    rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../Css/Default.css">
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <link rel="stylesheet" href="../Css/Footer.css">
+    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../Css/Shop.css">
+    <link rel="stylesheet" href="../Css/Contact.css">
+    <link rel="stylesheet" href="../Css/Cart.css">
+    <link rel="stylesheet" href="../Css/LR.css">
+    <link rel="stylesheet" href="../Css/Profile.css">
+    <link rel="stylesheet" href="../Css/Order.css">
+    <link rel="stylesheet" href="../Css/Product.css">
+    <link rel="stylesheet" href="../Css/Checkout.css">
+
+    <!-- Cart qty Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Title Logo -->
+    <link rel="icon" href="../Images/Logo/Logoc.png" type="image/png">
+    
+    <title>Online Shopping site in india</title>
+</head>
+<body>
+
+    <!-- Bootstrap Popper and Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <!-- Start of Navbar Section -->
+
+        <section class="navbar-section fixed-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="../Admin/Ahome.html">
+                            <img src="../Images/Logo/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Responsive Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="bi bi-list-stars" style="color: white; font-size: 28px;"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mx-auto gap-0 gap-md-3">
+                            <li class="nav-item">
+                                <a class="nav-link 
+                                ms-2 ms-md-0" href="../User/Home.html"><i class="bi bi-house-fill"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Shop.html"><i class="bi bi-bag-check-fill"></i> Shop</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Contact.html"><i class="bi bi-headset"></i> Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active
+                                ms-2 ms-md-0" href="../User/Cart.html"><i class="bi bi-cart-dash-fill"></i> Cart</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Order.html"><i class="bi bi-box-seam-fill"></i> Orders</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icon gap-0 gap-md-2">
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Profile.html"><i class="bi bi-person-fill"></i> <span class="user-name"> Dhruv</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link s'
+                                ms-2 ms-md-0" href="../User/Login.html"><i class="bi bi-person-fill"></i> <small>Login/Regsiter</small></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link ms-2 ms-md-0" onclick="openSearch()"><i class="bi bi-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Overlay -->
+            <div id="searchOverlay" class="nav-search-overlay">
+                <span class="close-btn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="nav-search-form">
+                    <form action="../User/shop.html">
+                        <input type="text" placeholder="Search for Products, Brands and More" name="search">
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                function openSearch() {
+                    document.getElementById("searchOverlay").style.display = "block";
+                }
+
+                function closeSearch() {
+                    document.getElementById("searchOverlay").style.display = "none";
+                }
+            </script>
+        </section>
+
+        <div class="Space-section" style="padding-top: 81px"></div>
+        
+    <!-- End of Navbar Section -->
+
+    <!-- Start of Cart Table, Discount, and Total Section -->
+
+        <section class="cart-section Dhruv">
+            <div class="container Size">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table class="table table-borderless cart-table">
+                                
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th class="text-center">Price</th>
+                                        <th class="text-center">Qty</th>
+                                        <th class="text-center">Total</th>
+                                        <th class="text-center">Delete</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+
+                                    <tr class="cart-item">
+                                        <td class="product-info">
+                                            <img src="../Images/Products/Product 1/p1.jpg" alt="Product Image">
+                                            <div class="product-details">
+                                                <h6 class="product-name">Lenovo IdeaPad Gaming 3.</h6>
+                                                <div class="product-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="price text-center">₹ 6499</td>
+                                        <td class="quantity text-center">
+                                            <div class="pro-qty quantity-controls">
+                                                <span class="dec decrement">-</span>
+                                                <input type="text" readonly value="1" class="quantity-input" min="1" max="5" name="qty" data-pid="1">                                                
+                                                <input type="hidden" value="" name="pid">
+                                                <span class="inc increment">+</span>
+                                            </div>
+                                        </td>
+                                        <td class="total text-center">₹ 6499</td>
+                                        <td class="delete text-center">
+                                            <button class="btn btn-sm btn-outline-danger" onclick="window.location.href=''">Remove</button>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="cart-item">
+                                        <td class="product-info">
+                                            <img src="../Images/Products/Product 4/p1.jpg" alt="Product Image">
+                                            <div class="product-details">
+                                                <h6 class="product-name">Portronics Toad One Bluetooth Mouse.</h6>
+                                                <div class="product-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="price text-center">₹ 649</td>
+                                        <td class="quantity text-center">
+                                            <div class="pro-qty quantity-controls">
+                                                <span class="dec decrement">-</span>
+                                                <input type="text" readonly value="1" class="quantity-input" min="1" max="5" name="qty" data-pid="1">                                                
+                                                <input type="hidden" value="" name="pid">
+                                                <span class="inc increment">+</span>
+                                            </div>
+                                        </td>
+                                        <td class="total text-center">₹ 649</td>
+                                        <td class="delete text-center">
+                                            <button class="btn btn-sm btn-outline-danger" onclick="window.location.href=''">Remove</button>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                    <script>
+                        $(document).ready(function() {
+                            var proQty = $('.pro-qty');
+                    
+                            // Handling click events on increment and decrement buttons
+                            proQty.on('click', '.inc, .dec', function() {
+                                var $button = $(this);
+                                var $input = $button.siblings('input.quantity-input');
+                                var oldValue = parseInt($input.val(), 10);
+                                var minValue = parseInt($input.attr('min'), 10);
+                                var maxValue = parseInt($input.attr('max'), 10);
+                                var newVal;
+                    
+                                // Increment or decrement value based on button click
+                                if ($button.hasClass('inc')) {
+                                    newVal = oldValue < maxValue ? oldValue + 1 : maxValue;
+                                } else {
+                                    newVal = oldValue > minValue ? oldValue - 1 : minValue;
+                                }
+                    
+                                // Update the input field with the new value
+                                $input.val(newVal).change(); // Trigger the onchange event
+                            });
+                    
+                            // Handling the onchange event to update the cart
+                            $('.quantity-input').on('change', function() {
+                                var newValue = $(this).val();
+                                var productId = $(this).data('pid'); // Get the product ID from the data attribute
+                                window.location.href = '{{ URL::to('/') }}/updatecart_action/' + newValue + ',' + productId;
+                            });
+                        });
+                    </script>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="cart-discount">
+                                <h5>Discount Code</h5>
+                                <form action="" class="discount-form" method="POST" onsubmit="return discountvalidate()">
+                                <input type="text" placeholder="Enter your Coupon Code" 
+                                        class="discount-input Dinput" name="discount" id="discount" value="">
+                                <button type="submit" class="btn discount-button Dbutton">Apply</button>
+                                </form>
+                                <div class="error">
+                                <span id="e_discount"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="cart-total">
+                                <h4>Cart Total</h4>
+                                <ul class="total-summary">
+                                    <li>Total
+                                        <span>₹ 200</span>
+                                    </li>
+                                    <li>Delivery Charge
+                                        <span>Free</span>
+                                    </li>
+
+                                    <li>Discount
+                                        <span style="color: red;">-₹ 3000</span>
+                                    </li>
+
+                                    <li>SUB Total
+                                        <span>₹ 40000</span>
+                                    </li>
+                                </ul>
+                                <form action="../User/Checkout.html">
+                                    <button type="submit" class="btn checkout-button Dbutton">Proceed To Checkout</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <center>
+                        <img src="{{ asset('Images/Backgrounds/Cartempty.png') }}" alt="" style="height: 450px; width: 450px;" class="img-fluid">
+                    </center> -->
+
+            </div>
+        </section>
+
+    <!-- End of Cart Table, Discount, and Total Section -->
+
+    <!-- Start of Footer Section -->
+
+        <section class="footer-section">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <img src="../Images/Logo/Logo.png" alt="Logo">
+                                    <p>Your one-stop online shopping experience. Discover a wide range of high-quality products, from the latest fashion and electronics to home essentials and more.</p>
+                                    <h2>We Accept</h2>
+                                    <div class="payment-icons">
+                                        <i class="fa fa-cc-visa"></i>
+                                        <i class="fa fa-credit-card"></i>
+                                        <i class="fa fa-cc-mastercard"></i>
+                                        <i class="fa fa-cc-paypal"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Make Money With Us</h2>
+                                    <ul>
+                                        <li><a href="#">Sell On Madhav</a></li>
+                                        <li><a href="#">Protect and Build Your Brand</a></li>
+                                        <li><a href="#">Become an Affiliate</a></li>
+                                        <li><a href="#">Fulfilment by Madhav</a></li>
+                                        <li><a href="#">Advertise Your Products</a></li>
+                                        <li><a href="#">Madhav Pay on Merchants</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Let Us Help You</h2>
+                                    <ul>
+                                        <li><a href="#">COVID-19 and Madhav</a></li>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Return Center</a></li>
+                                        <li><a href="#">Recalls and Product Safety Alerts</a></li>
+                                        <li><a href="#">100% Purchase Protection</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>About Us</h2>
+                                    <p>Madhav delivers the largest selection of products to Prime members in India, same day or faster.</p>
+                                    <h2>Follow us on</h2>
+                                    <p class="social-icons">
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                        <i class="bi bi-twitter"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col">
+                                <div class="footer-copyright">
+                                    Conditions of Use & Sale Privacy Notice Interest-Based Ads. <br>
+                                    © 2000-2024, Madhav.com, Inc. or its affiliates. <br>
+                                    Created by Dhruv M Shah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    <!-- End of Footer Section -->
+
+    <!-- Valadation link -->
+    <script src="../Js/Main.js"></script>
+
+</body>
+</html>

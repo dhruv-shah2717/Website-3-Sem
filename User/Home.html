@@ -1,0 +1,709 @@
+<!-- Shree Ganashi Nam -->
+<!-- Mahek -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" 
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" 
+    rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../Css/Default.css">
+    <link rel="stylesheet" href="../Css/Navbar.css">
+    <link rel="stylesheet" href="../Css/Footer.css">
+    <link rel="stylesheet" href="../Css/Home.css">
+    <link rel="stylesheet" href="../Css/Shop.css">
+    <link rel="stylesheet" href="../Css/Contact.css">
+    <link rel="stylesheet" href="../Css/Cart.css">
+    <link rel="stylesheet" href="../Css/LR.css">
+    <link rel="stylesheet" href="../Css/Profile.css">
+    <link rel="stylesheet" href="../Css/Order.css">
+    <link rel="stylesheet" href="../Css/Product.css">
+    <link rel="stylesheet" href="../Css/Checkout.css">
+
+    <!-- Cart qty Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Title Logo -->
+    <link rel="icon" href="../Images/Logo/Logoc.png" type="image/png">
+    
+    <title>Online Shopping site in india</title>
+</head>
+<body>
+
+    <!-- Bootstrap Popper and Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <!-- Start of Navbar Section -->
+
+        <section class="navbar-section fixed-top">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a href="../Admin/Ahome.html">
+                            <img src="../Images/Logo/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Responsive Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="bi bi-list-stars" style="color: white; font-size: 28px;"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mx-auto gap-0 gap-md-3">
+                            <li class="nav-item">
+                                <a class="nav-link active
+                                ms-2 ms-md-0" href="../User/Home.html"><i class="bi bi-house-fill"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Shop.html"><i class="bi bi-bag-check-fill"></i> Shop</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Contact.html"><i class="bi bi-headset"></i> Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Cart.html"><i class="bi bi-cart-dash-fill"></i> Cart</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Order.html"><i class="bi bi-box-seam-fill"></i> Orders</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icon gap-0 gap-md-2">
+
+                            <li class="nav-item">
+                                <a class="nav-link
+                                ms-2 ms-md-0" href="../User/Profile.html"><i class="bi bi-person-fill"></i> <span class="user-name"> Dhruv</span></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link s'
+                                ms-2 ms-md-0" href="../User/Login.html"><i class="bi bi-person-fill"></i> <small>Login/Regsiter</small></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link ms-2 ms-md-0" onclick="openSearch()"><i class="bi bi-search"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Overlay -->
+            <div id="searchOverlay" class="nav-search-overlay">
+                <span class="close-btn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="nav-search-form">
+                    <form action="../User/shop.html">
+                        <input type="text" placeholder="Search for Products, Brands and More" name="search">
+                        <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                function openSearch() {
+                    document.getElementById("searchOverlay").style.display = "block";
+                }
+
+                function closeSearch() {
+                    document.getElementById("searchOverlay").style.display = "none";
+                }
+            </script>
+        </section>
+
+        <div class="Space-section" style="padding-top: 81px"></div>
+        
+    <!-- End of Navbar Section -->
+
+    <!-- Start of Slider Image Section -->
+
+        <section class="slider-section">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Images/Sliders/Slider1.jpg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Images/Sliders/Slider2.webp" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Images/Sliders/Slider3.webp" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+        </section>
+
+    <!-- End of Slider Image Section -->
+
+    <!-- Start of Product Card Section -->
+
+        <section class="product-section Dhruv">
+            <div class="container Size">
+                <div class="row g-4">
+                    <div class="col">
+                        <div class="product-heading">
+                            <h4>New Product</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 1/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Lenovo IdeaPad Gaming 3.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 6499</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 3/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">boAt Airdopes 141.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 999</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 4/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Portronics Toad One Bluetooth Mouse.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 649</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 10/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">OTUS Men's Formal Slim Fit Solid Shirt.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 418</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 14/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Lymio Jeans for Men.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 799</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 18/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Lymio Casual Shirt for Men.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 600</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 19/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">YONEX Nanoray Aluminum Badminton Racquet.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1496</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 24/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">SG Prokick Kashmir Willow Cricket Bat.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1735</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Product Card Section -->
+
+    <!-- Start of Hero Image Section -->
+
+        <section class="hero-section Dhruv">
+
+            <img src="../Images/Heros/Hero.jpg" alt="Hero Image" class="hero-image">
+        
+        </section>
+
+    <!-- End of Hero Image Section -->
+
+    <!-- Start of Product Card Section -->
+
+        <section class="product-section Dhruv">
+            <div class="container Size">
+                <div class="row g-4">
+                    <div class="col">
+                        <div class="product-heading">
+                            <h4>Trending Product</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 6/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">SanDisk Ultra Dual Drive Luxe USB Type C Flash Drive.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1299</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 9/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Cosmic Byte CB-GK-25 Pandora TKL Mechanical Keyboard.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1600</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 11/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">OTUS Men's Formal Slim Fit Solid Shirt.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 218</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 13/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">CB-COLEBROOK Men's Regular Fit Shirt.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 392</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 15/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Lymio Jeans for Men.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 679</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 20/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">YONEX Light Aluminium Strung Badminton Racket.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 490</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 23/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">Nivia Storm Football.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 299</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" onclick="window.location.href='Product.html'">
+                        <div class="card product-card h-100">
+                            <img src="../Images/Products/Product 27/p1.jpg" class="card-img product-img" alt="Product Image 1">
+                            <div class="card-body product-body">
+                                <p class="product-name">SG Rsd Extreme Cricket Wicket Keeping Gloves.</p>
+                                <p class="product-rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </p>
+                                <p class="product-price">₹ 1350</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Product Card Section -->  
+
+    <!-- Start of Slide Image and Content Section -->
+
+        <section class="slide-section Dhruv">
+            <div class="container Size">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="slide-image">
+                            <img class="image" src="../Images/Slides/Slide.jpg" alt="Slide Image">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="slide-content">
+                            <h2 class="slide-heading">Shine Brighter with Diwali Sale Extravaganza!</h2>
+                            <p class="slide-text">This Diwali, let your celebrations sparkle with joy and savings! Get ready for a shopping experience like never before with our Diwali Sale Extravaganza, where the best deals meet unbeatable prices. Whether you're looking to upgrade your wardrobe, deck out your home, or find the perfect gifts for loved ones, we've got you covered!</p>
+                            <button class="btn Dbutton">Read More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Slide Image and Content Section -->
+
+    <!-- Start of Feature Card Section -->
+
+        <section class="feature-section Dhruv">
+            <div class="container Size">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                    <div class="col">
+                        <div class="feature-card">
+                            <div class="row">
+                                <div class="col-2 p-0">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-car-front-fill"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="col">
+                                    <div class="card-body feature-body">
+                                        <h6 class="feature-title">Free Shipping</h6>
+                                        <p class="feature-text">For all order over ₹500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="feature-card">
+                            <div class="row">
+                                <div class="col-2 p-0">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-cash"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="col">
+                                    <div class="card-body feature-body">
+                                        <h6 class="feature-title">Money Back Guarantee</h6>
+                                        <p class="feature-text">If good have Problems</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="feature-card">
+                            <div class="row">
+                                <div class="col-2 p-0">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-clock"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="col">
+                                    <div class="card-body feature-body">
+                                        <h6 class="feature-title">Online Support 24/7</h6>
+                                        <p class="feature-text">Dedicated support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="feature-card">
+                            <div class="row">
+                                <div class="col-2 p-0">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-headphones"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="col">
+                                    <div class="card-body feature-body">
+                                        <h6 class="feature-title">Payment Secure</h6>
+                                        <p class="feature-text">100% secure payment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Feature Card Section -->
+
+    <!-- Start of Footer Section -->
+
+        <section class="footer-section">
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <img src="../Images/Logo/Logo.png" alt="Logo">
+                                    <p>Your one-stop online shopping experience. Discover a wide range of high-quality products, from the latest fashion and electronics to home essentials and more.</p>
+                                    <h2>We Accept</h2>
+                                    <div class="payment-icons">
+                                        <i class="fa fa-cc-visa"></i>
+                                        <i class="fa fa-credit-card"></i>
+                                        <i class="fa fa-cc-mastercard"></i>
+                                        <i class="fa fa-cc-paypal"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Make Money With Us</h2>
+                                    <ul>
+                                        <li><a href="#">Sell On Madhav</a></li>
+                                        <li><a href="#">Protect and Build Your Brand</a></li>
+                                        <li><a href="#">Become an Affiliate</a></li>
+                                        <li><a href="#">Fulfilment by Madhav</a></li>
+                                        <li><a href="#">Advertise Your Products</a></li>
+                                        <li><a href="#">Madhav Pay on Merchants</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>Let Us Help You</h2>
+                                    <ul>
+                                        <li><a href="#">COVID-19 and Madhav</a></li>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Return Center</a></li>
+                                        <li><a href="#">Recalls and Product Safety Alerts</a></li>
+                                        <li><a href="#">100% Purchase Protection</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="footer-box">
+                                    <h2>About Us</h2>
+                                    <p>Madhav delivers the largest selection of products to Prime members in India, same day or faster.</p>
+                                    <h2>Follow us on</h2>
+                                    <p class="social-icons">
+                                        <i class="bi bi-facebook"></i>
+                                        <i class="bi bi-instagram"></i>
+                                        <i class="bi bi-whatsapp"></i>
+                                        <i class="bi bi-twitter"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col">
+                                <div class="footer-copyright">
+                                    Conditions of Use & Sale Privacy Notice Interest-Based Ads. <br>
+                                    © 2000-2024, Madhav.com, Inc. or its affiliates. <br>
+                                    Created by Dhruv M Shah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    <!-- End of Footer Section -->
+
+</body>
+</html>
